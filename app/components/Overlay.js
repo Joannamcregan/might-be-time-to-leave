@@ -20,10 +20,11 @@ function Overlay(props) {
     <div id="overlay" className={appState.hasSelection ? "hidden" : ""}>
       <div id="overlay-content">
         <h1>Safety first</h1>
-        <p>
-          If you need to quickly leave this page, pressing the Exit button at the bottom of the screen and we will redirect you to a different
+        <p>This site contains information about abusive relationships, including advice for how to leave them. <em>Please be aware that if an abuser suspects you are thinking about leaving them, your risk of being killed by them increases (even if they have never been physically violent before.)</em></p>
+        <p><strong>
+          If you need to quickly leave this page, press the Exit button at the bottom of the screen and we will redirect you to a different
           website.
-        </p>
+        </strong></p>
         <p>
           We will also try to redirect you if we notice any sudden jerking
           movements from your mobile device. If you are using an iPhone, please

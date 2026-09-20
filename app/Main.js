@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import Risk from "./components/Risk";
 import QuickExit from "./components/QuickExit";
 import VisibilityRedirect from "./components/VisibilityRedirect";
+import MotionRedirect from "./components/MotionRedirect";
 import StateContext from "./StateContext";
 import DispatchContext from "./DispatchContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -28,10 +29,10 @@ function Main() {
         break;
       case "redirect":
         let destination = "https://" + draft.redirectSelection + ".com";
-        // window.location.replace(destination);
-        console.log(
-          `totally going to redirect to ${destination} once testing is complete`
-        );
+        window.location.replace(destination);
+        // console.log(
+        //   `totally going to redirect to ${destination} once testing is complete`
+        // );
         break;
     }
   }
@@ -43,6 +44,7 @@ function Main() {
       <DispatchContext.Provider value={dispatch}>
         <BrowserRouter>
           <VisibilityRedirect />
+          <MotionRedirect />
           <Header />
           <Overlay />
           <QuickExit redirectSelection={state.redirectSelection} />

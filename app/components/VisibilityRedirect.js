@@ -14,7 +14,10 @@ function VisibilityRedirect(props) {
   useEffect(() => {
     let appDestination = appState.redirectSelection;
     document.addEventListener("visibilitychange", appDestination => {
-      redirect(appDestination);
+      if (document.visibilityState === "hidden"){
+        redirect(appDestination);
+        localStorage.removeItem("selectedStyle");
+      }
     });
     return () => {
       document.removeEventListener(
