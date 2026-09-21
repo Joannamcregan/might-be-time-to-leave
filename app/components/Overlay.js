@@ -19,7 +19,7 @@ function Overlay(props) {
   return (
     <div id="overlay" className={appState.hasSelection ? "hidden" : ""}>
       <div id="overlay-content">
-        <h1>Safety first</h1>
+        <h1>Safety First</h1>
         <p>This site contains information about abusive relationships, including advice for how to leave them. <em>Please be aware that if an abuser suspects you are thinking about leaving them, your risk of being killed by them increases (even if they have never been physically violent before.)</em></p>
         <p><strong>
           If you need to quickly leave this page, press the Exit button at the bottom of the screen and we will redirect you to a different
