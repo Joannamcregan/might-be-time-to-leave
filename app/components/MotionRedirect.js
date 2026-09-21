@@ -12,6 +12,7 @@ function MotionRedirect(props) {
   }
 
   useEffect(() => {
+    alert('we are trying');
     let appDestination = appState.redirectSelection;
     function triggerRedirect(event, redirectSite){
       const { x, y, z } = event.acceleration || { x: 0, y: 0, z: 0 };
